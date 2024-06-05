@@ -1,0 +1,2714 @@
+body, html {
+    height: 100% !important;
+}
+
+/* NAVIGASI BAR */
+.navbar {
+    background-color: #61b5e6;
+    height: 7rem;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+    margin: 1rem 2rem;
+    border-radius: 16px 16px 0px 0px;
+    margin-left: 26px !important;
+}
+
+/* UKURAN NAVBAR TEMPAT IMAGE */
+.navbar-brand {
+    width: 21rem !important;
+}
+
+/* GAMBAR NAVBAR */
+.navbar-brand img {
+    width: 100%;
+}
+
+/* 4 LINK NAV DI AWAL */
+.nav-link {
+    color: #ffffff !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+}
+
+/* LOGO LOCK SEBELAH LOGIN */
+.fa {
+    font-size: 0.8em;
+}
+
+#admisi {
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 2px;
+    padding: 0.5rem 2rem;
+    transition: all .3s;
+    color: #61b5e6;
+    border-radius: 5rem;
+}
+
+#admisi:hover {
+    background-color: #ffffff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+    transform: scale(1.05);
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #ffffff !important;
+    color: #61b5e6 !important;
+    border-radius: 10px;
+    margin-left: 6px;
+    min-width: 100%;
+}
+
+.navbar-nav .dropdown-menu a {
+    color: #61b5e6 !important;
+    background-color: #ffffff !important;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 8px;
+}
+
+.navbar-toggler {
+    margin-top: 3.8px !important;
+    margin-left: 10px !important;
+    border: none;
+}
+
+#admisi {
+    margin-left: auto !important;
+    color: #61b5e6;
+}
+
+.dropdown-item:focus {
+    background-color: white !important;
+}
+
+/* TOGGLER NAVBAR */
+.navbar-toggler, .navbar-toggler:focus, .btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#judulCanvas {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    transition: ease-in-out .3s;
+    -webkit-transition: ease-in-out .3s;
+    -moz-transition: ease-in-out .3s;
+    -ms-transition: ease-in-out .3s;
+    -o-transition: ease-in-out .3s;
+}
+
+#judulCanvas:hover {
+    font-size: 1.03rem;
+    color: #FBFFFF;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 0;
+}
+
+.offcanvas-end {
+    background-color: #2d98d6;
+}
+
+.offcanvas-header {
+    padding-top: 16px;
+    margin-top: 8px;
+}
+
+.btn-close {
+    transition: ease-in-out 0.2s;
+    font-size: 1.3rem !important;
+    margin-top: -3px !important;
+}
+
+.btn-close:hover {
+    transform: scale(1.2);
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: white;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.dropdown-item {
+    position: relative;
+}
+
+.dropdown-item:hover {
+    background-color: #ffffff;
+}
+
+.dropdown-item::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #61b5e6;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-link:hover::before, .dropdown-item:hover::before {
+    width: 100%;
+    visibility: visible;
+}
+
+#login:hover::before {
+    visibility: hidden;
+}
+
+#ad-mini {
+    display: none;
+}
+
+.card-image {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    height: 200px;
+}
+
+.card-image .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide-content {
+    padding: 45px 20px;
+}
+
+.card {
+    border-radius: 20px;
+    width: 25% !important;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .15);
+}
+
+.image-content {
+    padding: 20px 0px 0px 0px !important;
+    width: 100%;
+}
+
+.image-content, .card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 20px 10px 20px;
+    height: 100%;
+}
+
+
+
+/* SCREEN DARI 991PX KE 1199PX (DESKTOP BIASA SAMPAI LARGE DESKTOP)*/
+@media (min-width: 991px) and (max-width: 1199.98px) {
+
+    .navbar {
+        height: 6rem;
+    }
+
+    .navbar-brand {
+        margin: 0;
+        width: 320px !important;
+    }
+
+    .navbar-brand img {
+        width: 90%;
+    }
+
+    .nav-link {
+        color: #ffffff !important;
+        font-size: 1rem;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .navbar-nav .dropdown-menu a {
+        color: #61b5e6 !important;
+        font-size: 0.85rem;
+        padding: 6px;
+    }
+
+    .fa {
+        font-size: 0.70em;
+    }
+
+    #admisi {
+        color: #61b5e6;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-left: 2px;
+        padding: 0.5rem 1.5rem;
+        transition: all .2s;
+        border-radius: 5rem;
+    }
+
+    #admisi:hover {
+        background-color: #ffffff;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+        transform: scale(1.05);
+    }
+
+    .arrow-prev {
+        margin-right: 60px !important;
+        width: 40px;
+        height: 40px;
+    }
+
+    .arrow-next {
+        margin-left: 60px !important;
+        width: 40px;
+        height: 40px;
+    }
+
+    .heading-secondary {
+        font-size: 3.8rem !important;
+    }
+
+    .heading-secondary::after {
+        width: 13rem !important;
+    }
+
+    .footer-col-satu, .footer-col-dua, .footer-col-tiga {
+        margin-left: 40px !important;
+    }
+
+    .footer-col-satu, .footer-col-dua {
+        width: 35% !important;
+    }
+
+    .footer-wrapper {
+        padding: 40px 50px !important;
+    }
+
+    .logo {
+        width: 35% !important;
+    }
+
+    .email:hover {
+        font-size: 15px !important;
+    }
+
+    .footer-heading {
+        font-size: 20px !important;
+    }
+
+    .footer-text, .nomor-hp {
+        font-size: 13.5px !important;
+    }
+
+    .medsos-list svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .medsos {
+        margin-top: 20px !important;
+    }
+
+    .medsos .bi:hover {
+        transform: scale(1.1);
+    }
+
+    .logo-hubungi {
+        width: 15% !important;
+    }
+
+}
+
+/* /* SCREEN DARI 992PX KE 1010PX  */
+@media (min-width: 992px) and (max-width: 1010.98px) {
+    .button {
+        font-size: 14.5px !important;
+    }
+
+    .button a {
+        font-size: 14.5px !important;
+    }
+
+    .deskripsi {
+        font-size: 14.5px !important;
+        line-height: 1.7 !important;
+        margin-top: 10px !important;
+    }
+}
+
+/* SCREEN DARI 622PX KE 991PX (DARI HP SAMPAI TABLET)*/
+@media (min-width: 622px) and (max-width: 991.98px) {
+
+    #admisi {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.5rem 1.5rem;
+        border-radius: 5rem;
+    }
+
+    .navbar {
+        height: 6rem;
+    }
+
+    .navbar-brand {
+        margin: 0;
+        width: 320px !important;
+    }
+
+    .navbar-brand img {
+        width: 90%;
+    }
+
+    .btn-close {
+        font-size: 0.95rem !important;
+        margin-top: -2px !important;
+    }
+
+    #login {
+        visibility: hidden;
+    }
+
+    .offcanvas-body {
+        flex-direction: row;
+    }
+
+    .offcanvas-body .dropdown-menu {
+        margin-right: 216px !important;
+    }
+
+    .nav-link:hover::before {
+        visibility: hidden;
+    }
+
+    .nav-link {
+        transition: all .2s;
+        color: #ffffff !important;
+        font-size: 1rem;
+    }
+
+    .navbar-nav .dropdown-menu a {
+        font-size: 0.95rem !important;
+    }
+
+    .arrow-prev {
+        margin-right: 30px !important;
+        width: 32px;
+        height: 32px;
+    }
+
+    .arrow-next {
+        margin-left: 30px !important;
+        width: 32px;
+        height: 32px;
+    }
+
+    .heading-secondary {
+        font-size: 3.3rem !important;
+    }
+
+    .heading-secondary::after {
+        width: 11.3rem !important;
+    }
+
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 40% !important;
+    }
+
+    .card:first-child {
+        margin-bottom: 35px !important;
+        width: 90% !important;
+    }
+
+    .button {
+        font-size: 14.5px !important;
+    }
+
+    .button a {
+        font-size: 14.5px !important;
+    }
+
+    .deskripsi {
+        font-size: 14.5px !important;
+        line-height: 1.7 !important;
+        margin-top: 10px !important;
+    }
+
+    .footer {
+        padding-left: 29px !important;
+        padding-right: 29px !important;
+    }
+
+    .footer-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .footer-col-satu {
+        margin-left: 0px !important;
+        margin-bottom: 20px !important;
+        align-items: center !important;
+    }
+
+    .footer-col-dua {
+        margin-left: 0px !important;
+        margin-bottom: 40px !important;
+        align-items: center !important;
+    }
+
+    .footer-col-tiga {
+        margin-left: 0px !important;
+        align-items: center !important;
+        margin-bottom: 0px !important;
+    }
+
+    .footer-col-satu, .footer-col-dua, .footer-col-tiga {
+        width: 80% !important;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .logo {
+        width: 45% !important;
+        margin-bottom: 45px !important;
+    }
+
+    .email:hover {
+        font-size: 14.5px !important;
+    }
+
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-heading {
+        font-size: 20px !important;
+    }
+
+    .footer-text, .nomor-hp {
+        font-size: 13.5px !important;
+    }
+
+    .medsos-list svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .medsos {
+        margin-top: 20px !important;
+    }
+
+    .medsos .bi:hover {
+        transform: scale(1.1);
+    }
+
+    .logo-hubungi {
+        width: 15% !important;
+    }
+
+    .profil-wrapper .sidebar {
+        display: none !important;
+    }
+}
+
+/* SCREEN DARI 750PX KE 991PX*/
+@media (min-width: 750px) and (max-width: 991.98px) {
+    .card:first-child .button {
+        width: 30% !important;
+    }
+}
+
+/* SCREEN DARI 749PX KE 783PX*/
+@media (min-width: 749px) and (max-width: 783.98px) {
+    .card:first-child .button {
+        width: 32% !important;
+    }
+}
+
+
+/* SCREEN DARI 750PX KE 859PX*/
+@media (min-width: 750px) and (max-width: 859.98px) {
+    .heading-secondary {
+        font-size: 2.8rem !important;
+        margin-bottom: 5rem !important;
+    }
+
+    .heading-secondary::after {
+        width: 9.7rem !important;
+    }
+}
+
+/* SCREEN DARI 622PX KE 749PX*/
+@media (min-width: 622px) and (max-width: 749.98px) {
+    .heading-secondary {
+        font-size: 2.7rem !important;
+        margin-bottom: 4.5rem !important;
+    }
+
+    .heading-secondary::after {
+        width: 9rem !important;
+    }
+
+    .content-tengah {
+        margin-top: 50px !important;
+    }
+
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 90% !important;
+        margin-bottom: 35px !important;
+    }
+
+    .button {
+        font-size: 14.5px !important;
+        width: 50% !important;
+    }
+
+    .button a {
+        font-size: 14.5px !important;
+    }
+
+    .deskripsi {
+        font-size: 14.5px !important;
+        line-height: 1.7 !important;
+        margin-top: 10px !important;
+    }
+}
+
+/* SCREEN DARI 0PX KE 749PX*/
+@media (min-width: 0px) and (max-width: 749.98px) {
+    .card:last-child {
+        margin-bottom: 0 !important;
+    }
+}
+
+/* SCREEN DARI 544PX KE 621PX*/
+@media (min-width: 544px) and (max-width: 621.98px) {
+
+    .navbar {
+        height: 5.5rem;
+    }
+
+    .navbar-brand img {
+        width: 256px;
+    }
+
+    .navbar-brand {
+        margin: 0;
+        width: 257px !important;
+    }
+
+    #admisi {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.5rem 0.8rem;
+        border-radius: 5rem;
+    }
+
+    .navbar-toggler-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    #login {
+        visibility: hidden;
+    }
+
+    .offcanvas-body {
+        flex-direction: row;
+    }
+
+    #offcanvasNavbar {
+        width: 350px !important;
+    }
+
+    #judulCanvas {
+        font-size: 0.85rem;
+        transition: ease-in-out .3s;
+        -webkit-transition: ease-in-out .3s;
+        -moz-transition: ease-in-out .3s;
+        -ms-transition: ease-in-out .3s;
+        -o-transition: ease-in-out .3s;
+    }
+
+    #judulCanvas:hover {
+        font-size: 0.88rem;
+        color: #FBFFFF;
+    }
+
+    .nav-link:hover {
+        transform: scale(1.03);
+    }
+
+    .btn-close {
+        transition: ease-in-out 0.2s;
+        font-size: 0.85rem !important;
+        margin-top: -4px !important;
+    }
+
+    .btn-close:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+
+    .offcanvas-body .dropdown-menu {
+        margin-right: 177px !important;
+    }
+
+    .nav-link:hover::before {
+        visibility: hidden;
+    }
+
+    .nav-link {
+        transition: all .2s;
+        color: #ffffff !important;
+        font-size: 0.95rem;
+    }
+
+    .nav-link:hover {
+        transform: scale(1.03);
+    }
+
+    .navbar-nav .dropdown-menu a {
+        font-size: 0.9rem !important;
+    }
+
+    .arrow-prev {
+        margin-right: 25px !important;
+        width: 28px;
+        height: 28px;
+    }
+
+    .arrow-next {
+        margin-left: 25px !important;
+        width: 28px;
+        height: 28px;
+    }
+
+    .heading-secondary {
+        font-size: 2.3rem !important;
+        margin-bottom: 4.3rem !important;
+    }
+
+    .heading-secondary::after {
+        width: 7.7rem !important;
+    }
+
+    .content-tengah {
+        margin-top: 50px !important;
+    }
+
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 90% !important;
+        margin-bottom: 35px !important;
+    }
+
+    .button {
+        font-size: 14.5px !important;
+        width: 50% !important;
+    }
+
+    .button a {
+        font-size: 14.5px !important;
+    }
+
+    .deskripsi {
+        font-size: 14.5px !important;
+        line-height: 1.7 !important;
+        margin-top: 10px !important;
+    }
+
+    .card-image {
+        height: 200px !important;
+    }
+
+    .footer {
+        padding-left: 29px !important;
+        padding-right: 29px !important;
+    }
+
+    .footer-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .footer-col-satu {
+        margin-left: 0px !important;
+        margin-bottom: 20px !important;
+        align-items: center !important;
+    }
+
+    .footer-col-dua {
+        margin-left: 0px !important;
+        margin-bottom: 40px !important;
+        align-items: center !important;
+    }
+
+    .footer-col-tiga {
+        margin-left: 0px !important;
+        align-items: center !important;
+        margin-bottom: 0px !important;
+    }
+
+    .footer-col-satu, .footer-col-dua, .footer-col-tiga {
+        width: 80% !important;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .logo {
+        width: 60% !important;
+        margin-bottom: 50px !important;
+    }
+
+    .email:hover {
+        font-size: 14.5px !important;
+    }
+
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-heading {
+        font-size: 20px !important;
+    }
+
+    .footer-text, .nomor-hp {
+        font-size: 13.5px !important;
+    }
+
+    .medsos-list svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .medsos {
+        margin-top: 20px !important;
+    }
+
+    .medsos .bi:hover {
+        transform: scale(1.1);
+    }
+
+    .logo-hubungi {
+        width: 15% !important;
+    }
+
+    .profil-wrapper .sidebar {
+        display: none !important;
+    }
+
+    .judul-tentang-kami h2 {
+        font-size: 30px !important;
+    }
+
+    .judul-tentang-kami::after {
+        width: 4.6rem !important;
+    }
+
+    .isi-paragraf {
+        font-size: 14px !important;
+    }
+
+    .judul-visimisi h2 {
+        font-size: 30px !important;
+    }
+
+    .judul-visimisi::after {
+        width: 4.5rem !important;
+    }
+
+    .heading-icon__image {
+        height: 2.5rem !important;
+        width: 2.5rem !important;
+    }
+
+    .heading-icon__text {
+        font-size: 26px !important;
+    }
+
+    .paragraf-isimisi {
+        font-size: 15px !important;
+    }
+
+    .list li {
+        font-size: 15px !important;
+    }
+}
+
+/* SCREEN DARI 432PX KE 543PX*/
+@media (min-width: 432px) and (max-width: 543.98px) {
+    #admisi {
+        visibility: hidden !important;
+    }
+
+    #login {
+        display: none;
+    }
+
+    #ad-mini {
+        display: block;
+        width: 246px;
+        margin-top: 10px;
+        margin-left: 11px !important;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-left: 2px;
+        padding: 0.5rem 2rem;
+        transition: all .3s;
+        color: #61b5e6;
+        border-radius: 5rem;
+    }
+
+    #ad-mini:hover {
+        background-color: #ffffff;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+        transform: scale(1.05);
+    }
+
+    .navbar {
+        height: 5rem;
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+        margin: 1rem 2rem;
+    }
+
+    .navbar-brand img {
+        width: 100% !important;
+    }
+
+    .navbar-brand {
+        margin: 0;
+        width: 60% !important;
+        padding-left: 5px;
+    }
+
+    .navbar-toggler-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 2rem;
+    }
+
+    #login {
+        visibility: hidden;
+    }
+
+    .offcanvas-body {
+        flex-direction: row;
+    }
+
+    #offcanvasNavbar {
+        width: 300px !important;
+    }
+
+    #judulCanvas {
+        font-size: 0.93rem;
+        transition: ease-in-out .3s;
+    }
+
+    #judulCanvas:hover {
+        font-size: 0.97rem;
+        color: #FBFFFF;
+    }
+
+    .nav-link:hover {
+        transform: scale(1.03);
+    }
+
+    .btn-close {
+        transition: ease-in-out 0.2s;
+        font-size: 0.8rem !important;
+        margin-top: -30px !important;
+    }
+
+    .btn-close:hover {
+        transform: scale(1.1);
+    }
+
+    .offcanvas-body .dropdown-menu {
+        margin-right: 125px !important;
+    }
+
+    .nav-link:hover::before {
+        visibility: hidden;
+    }
+
+    .nav-link {
+        transition: all .2s;
+        color: #ffffff !important;
+        font-size: 0.95rem;
+    }
+
+    .nav-link:hover {
+        transform: scale(1.03);
+    }
+
+    .navbar-nav .dropdown-menu a {
+        font-size: 0.9rem !important;
+    }
+
+    .arrow-prev {
+        margin-right: 16px !important;
+        width: 20px;
+        height: 20px;
+    }
+
+    .arrow-next {
+        margin-left: 16px !important;
+        width: 20px;
+        height: 20px;
+    }
+
+    .heading-secondary {
+        font-size: 2.1rem !important;
+        margin-bottom: 4.3rem !important;
+    }
+
+    .heading-secondary::after {
+        width: 7.3rem !important;
+    }
+
+    .content-tengah {
+        margin-top: 50px !important;
+    }
+
+    .card-image {
+        height: 150px;
+    }
+
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 90% !important;
+        margin-bottom: 35px !important;
+    }
+
+    .button {
+        font-size: 14.5px !important;
+        width: 70% !important;
+    }
+
+    .button a {
+        font-size: 14.5px !important;
+    }
+
+    .deskripsi {
+        font-size: 14.5px !important;
+        line-height: 1.7 !important;
+        margin-top: 10px !important;
+    }
+
+    .footer {
+        padding-left: 29px !important;
+        padding-right: 29px !important;
+    }
+
+    .footer-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .footer-col-satu {
+        margin-left: 0px !important;
+        margin-bottom: 20px !important;
+        align-items: center !important;
+    }
+
+    .footer-col-dua {
+        margin-left: 0px !important;
+        margin-bottom: 40px !important;
+        align-items: center !important;
+    }
+
+    .footer-col-tiga {
+        margin-left: 0px !important;
+        align-items: center !important;
+        margin-bottom: 0px !important;
+    }
+
+    .footer-col-satu, .footer-col-dua, .footer-col-tiga {
+        width: 100% !important;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .logo {
+        width: 70% !important;
+        margin-bottom: 50px !important;
+    }
+
+    .email:hover {
+        font-size: 14.5px !important;
+    }
+
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-heading {
+        font-size: 20px !important;
+    }
+
+    .footer-text, .nomor-hp {
+        font-size: 13.5px !important;
+    }
+
+    .medsos-list svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .medsos {
+        margin-top: 20px !important;
+    }
+
+    .medsos .bi:hover {
+        transform: scale(1.1);
+    }
+
+    .logo-hubungi {
+        width: 15% !important;
+    }
+
+    .profil-wrapper .sidebar {
+        display: none !important;
+    }
+
+    .judul-tentang-kami h2 {
+        font-size: 28px !important;
+    }
+
+    .judul-tentang-kami::after {
+        width: 4.4rem !important;
+    }
+
+    .isi-paragraf {
+        font-size: 14px !important;
+    }
+
+    .judul-visimisi h2 {
+        font-size: 28px !important;
+    }
+
+    .judul-visimisi::after {
+        width: 4.3rem !important;
+    }
+
+    .heading-icon__image {
+        height: 2.3rem !important;
+        width: 2.3rem !important;
+    }
+
+    .heading-icon__text {
+        font-size: 23px !important;
+    }
+
+    .paragraf-isimisi {
+        font-size: 14.5px !important;
+    }
+
+    .list li {
+        font-size: 14.5px !important;
+    }
+}
+
+/* SCREEN DARI 432PX KE 460PX*/
+@media (min-width: 432px) and (max-width: 460.98px) {
+    .navbar-brand img {
+        width: 110%;
+    }
+}
+
+/* SCREEN DARI 432PX KE 570PX*/
+@media (min-width: 432px) and (max-width: 570.98px) {
+    .heading-secondary {
+        font-size: 2rem !important;
+        margin-bottom: 4.3rem !important;
+    }
+
+    .heading-secondary::after {
+        width: 6.6rem !important;
+        height: .7rem !important;
+    }
+
+    .content-tengah {
+        margin-top: 50px !important;
+    }
+}
+
+/* SCREEN DARI 400PX KE 431PX*/
+@media (min-width: 400px) and (max-width: 431.98px) {
+    #admisi {
+        display: none;
+    }
+
+    .navbar {
+        height: 4.8rem;
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+        margin: 1rem 2rem;
+    }
+
+    .navbar-brand img {
+        width: 120%;
+        margin-top: 2px;
+    }
+
+    .navbar-brand {
+        margin: 0;
+        width: 55% !important;
+    }
+
+    #login {
+        display: none;
+    }
+
+    #ad-mini {
+        display: block;
+        width: 190px;
+        margin-top: 10px;
+        margin-left: 14px !important;
+        font-size: 0.95rem;
+        font-weight: 700;
+        margin-left: 2px;
+        padding: 0.5rem 2rem;
+        transition: all .3s;
+        color: #61b5e6;
+        border-radius: 5rem;
+    }
+
+    #ad-mini:hover {
+        background-color: #ffffff;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+        transform: scale(1.05);
+    }
+
+    .navbar-toggler-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 2rem;
+    }
+
+    #login {
+        visibility: hidden;
+    }
+
+    .offcanvas-body {
+        flex-direction: row;
+    }
+
+    #offcanvasNavbar {
+        width: 250px !important;
+    }
+
+    #judulCanvas {
+        font-size: 0.8rem;
+        transition: ease-in-out .3s;
+        -webkit-transition: ease-in-out .3s;
+        -moz-transition: ease-in-out .3s;
+        -ms-transition: ease-in-out .3s;
+        -o-transition: ease-in-out .3s;
+    }
+
+    #judulCanvas:hover {
+        font-size: 0.85rem;
+        color: #FBFFFF;
+    }
+
+    .nav-link:hover {
+        transform: scale(1.03);
+    }
+
+    .btn-close {
+        transition: ease-in-out 0.2s;
+        font-size: 0.75rem !important;
+        margin-top: -30px !important;
+    }
+
+    .btn-close:hover {
+        transform: scale(1.1);
+    }
+
+    .offcanvas-body .dropdown-menu {
+        margin-right: 82px !important;
+    }
+
+    .nav-link:hover::before {
+        visibility: hidden;
+    }
+
+    .nav-link {
+        transition: all .2s;
+        color: #ffffff !important;
+        font-size: 0.9rem;
+    }
+
+    .nav-link:hover {
+        transform: scale(1.03);
+    }
+
+    .navbar-nav .dropdown-menu a {
+        font-size: 0.85rem !important;
+    }
+
+    .arrow-prev {
+        margin-right: 13px !important;
+        width: 15px;
+        height: 15px;
+    }
+
+    .arrow-next {
+        margin-left: 13px !important;
+        width: 15px;
+        height: 15px;
+    }
+
+    .heading-secondary {
+        font-size: 1.85rem !important;
+        margin-bottom: 4.1rem !important;
+    }
+
+    .heading-secondary::after {
+        width: 6.3rem !important;
+        height: .65rem !important;
+    }
+
+    .content-tengah {
+        margin-top: 45px !important;
+    }
+
+    .card-image {
+        height: 120px;
+    }
+
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 90% !important;
+        margin-bottom: 35px !important;
+    }
+
+    .button {
+        font-size: 14.5px !important;
+        width: 80% !important;
+    }
+
+    .button a {
+        font-size: 14.5px !important;
+    }
+
+    .deskripsi {
+        font-size: 14.5px !important;
+        line-height: 1.7 !important;
+        margin-top: 10px !important;
+    }
+
+    .footer {
+        padding-left: 29px !important;
+        padding-right: 29px !important;
+    }
+
+    .footer-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .footer-col-satu {
+        margin-left: 0px !important;
+        margin-bottom: 20px !important;
+        align-items: center !important;
+    }
+
+    .footer-col-dua {
+        margin-left: 0px !important;
+        margin-bottom: 40px !important;
+        align-items: center !important;
+    }
+
+    .footer-col-tiga {
+        margin-left: 0px !important;
+        align-items: center !important;
+        margin-bottom: 0px !important;
+    }
+
+    .footer-col-satu, .footer-col-dua, .footer-col-tiga {
+        width: 100% !important;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .logo {
+        width: 90% !important;
+        margin-bottom: 50px !important;
+    }
+
+    .email:hover {
+        font-size: 14.5px !important;
+    }
+
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-heading {
+        font-size: 20px !important;
+    }
+
+    .footer-text, .nomor-hp {
+        font-size: 13.5px !important;
+    }
+
+    .medsos-list svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .medsos {
+        margin-top: 20px !important;
+    }
+
+    .medsos .bi:hover {
+        transform: scale(1.1);
+    }
+
+    .logo-hubungi {
+        width: 15% !important;
+    }
+
+    .profil-wrapper .sidebar {
+        display: none !important;
+    }
+
+    .judul-tentang-kami h2 {
+        font-size: 26px !important;
+    }
+
+    .judul-tentang-kami::after {
+        width: 4.2rem !important;
+    }
+
+    .isi-paragraf {
+        font-size: 14px !important;
+    }
+
+    .judul-visimisi h2 {
+        font-size: 26px !important;
+    }
+
+    .judul-visimisi::after {
+        width: 4.1rem !important;
+    }
+
+    .heading-icon__image {
+        height: 2.3rem !important;
+        width: 2.3rem !important;
+    }
+
+    .heading-icon__text {
+        font-size: 22px !important;
+    }
+
+    .paragraf-isimisi {
+        font-size: 14.5px !important;
+    }
+
+    .list li {
+        font-size: 14.5px !important;
+    }
+}
+
+/* SCREEN DARI 360PX KE 399PX*/
+@media (min-width: 360px) and (max-width: 399.98px) {
+    #admisi {
+        display: none;
+    }
+
+    .navbar {
+        height: 4.8rem;
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+        margin: 1rem 2rem;
+    }
+
+    .navbar-brand img {
+        width: 120%;
+    }
+
+    .navbar-brand {
+        margin: 0;
+        width: 60% !important;
+    }
+
+    .navbar-toggler-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 2rem !important;
+    }
+
+    #login {
+        visibility: hidden;
+    }
+
+    .offcanvas-body {
+        flex-direction: row;
+    }
+
+    #offcanvasNavbar {
+        width: 220px !important;
+    }
+
+    #judulCanvas {
+        font-size: 0.78rem;
+        transition: ease-in-out .3s;
+        -webkit-transition: ease-in-out .3s;
+        -moz-transition: ease-in-out .3s;
+        -ms-transition: ease-in-out .3s;
+        -o-transition: ease-in-out .3s;
+    }
+
+    #judulCanvas:hover {
+        font-size: 0.83rem;
+        color: #FBFFFF;
+    }
+
+    .nav-link:hover {
+        transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+        -moz-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+        -o-transform: scale(1.03);
+    }
+
+    .btn-close {
+        transition: ease-in-out 0.2s;
+        font-size: 0.72rem !important;
+        margin-top: -28px !important;
+        -webkit-transition: ease-in-out 0.2s;
+        -moz-transition: ease-in-out 0.2s;
+        -ms-transition: ease-in-out 0.2s;
+        -o-transition: ease-in-out 0.2s;
+    }
+
+    .btn-close:hover {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
+
+    .offcanvas-body .dropdown-menu {
+        margin-right: 51px !important;
+    }
+
+    .nav-link:hover::before {
+        visibility: hidden;
+    }
+
+    .nav-link {
+        transition: all .2s;
+        color: #ffffff !important;
+        font-size: 0.85rem;
+    }
+
+    .nav-link:hover {
+        transform: scale(1.03);
+    }
+
+    .navbar-nav .dropdown-menu a {
+        font-size: 0.8rem !important;
+    }
+
+    #login {
+        display: none;
+    }
+
+    #ad-mini {
+        display: block;
+        width: 170px;
+        margin-top: 10px;
+        margin-left: 9px !important;
+        font-size: 0.9rem;
+        font-weight: 700;
+        padding: 0.5rem 2rem;
+        transition: all .3s;
+        color: #61b5e6;
+        border-radius: 5rem;
+    }
+
+    #ad-mini:hover {
+        background-color: #ffffff;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+        transform: scale(1.05);
+    }
+
+    .arrow-prev {
+        margin-right: 13px !important;
+        width: 15px;
+        height: 15px;
+    }
+
+    .arrow-next {
+        margin-left: 13px !important;
+        width: 15px;
+        height: 15px;
+    }
+
+    .heading-secondary {
+        font-size: 1.7rem !important;
+        margin-bottom: 4.1rem !important;
+    }
+
+    .heading-secondary::after {
+        width: 5.8rem !important;
+        height: .6rem !important;
+    }
+
+    .content-tengah {
+        margin-top: 45px !important;
+    }
+
+    .card-image {
+        height: 120px;
+    }
+
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 97% !important;
+        margin-bottom: 35px !important;
+    }
+
+    .button {
+        font-size: 14px !important;
+        width: 80% !important;
+    }
+
+    .button a {
+        font-size: 14px !important;
+    }
+
+    .deskripsi {
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+        margin-top: 10px !important;
+    }
+
+    .footer {
+        padding-left: 29px !important;
+        padding-right: 29px !important;
+    }
+
+    .footer-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .footer-col-satu {
+        margin-left: 0px !important;
+        margin-bottom: 20px !important;
+        align-items: center !important;
+    }
+
+    .footer-col-dua {
+        margin-left: 0px !important;
+        margin-bottom: 40px !important;
+        align-items: center !important;
+    }
+
+    .footer-col-tiga {
+        margin-left: 0px !important;
+        align-items: center !important;
+        margin-bottom: 0px !important;
+    }
+
+    .footer-col-satu, .footer-col-dua, .footer-col-tiga {
+        width: 100% !important;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .logo {
+        width: 100% !important;
+        margin-bottom: 50px !important;
+    }
+
+    .email:hover {
+        font-size: 12.5px !important;
+    }
+
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-heading {
+        font-size: 18px !important;
+    }
+
+    .footer-text, .nomor-hp {
+        font-size: 11.5px !important;
+    }
+
+    .medsos-list svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .medsos {
+        margin-top: 20px !important;
+    }
+
+    .medsos .bi:hover {
+        transform: scale(1.1);
+    }
+
+    .logo-hubungi {
+        width: 15% !important;
+    }
+
+    .profil-wrapper .sidebar {
+        display: none !important;
+    }
+
+    .judul-tentang-kami h2 {
+        font-size: 24px !important;
+    }
+
+    .judul-tentang-kami::after {
+        width: 4rem !important;
+    }
+
+    .isi-paragraf {
+        font-size: 13px !important;
+    }
+
+    .isi-tentang-kami {
+        margin-top: 3rem !important;
+    }
+
+    .main-tentang-kami-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .isi-paragraf {
+        text-align: center !important;
+    }
+
+    .judul-tentang-kami::after {
+        margin-left: 46px !important;
+        height: 8px !important;
+    }
+
+    .main-visimisi-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .judul-visimisi::after {
+        margin-left: 38px !important;
+    }
+
+    .judul-visimisi h2 {
+        font-size: 24px !important;
+    }
+
+    .judul-visimisi::after {
+        width: 4rem !important;
+    }
+
+    .heading-icon__image {
+        height: 2.1rem !important;
+        width: 2.1rem !important;
+    }
+
+    .heading-icon__text {
+        font-size: 20px !important;
+    }
+
+    .paragraf-isimisi {
+        font-size: 14.2px !important;
+    }
+
+    .list li {
+        font-size: 14.2px !important;
+    }
+}
+
+
+
+/* SCREEN DARI 0PX KE 359PX*/
+@media (min-width: 0px) and (max-width: 359.98px) {
+    #admisi {
+        visibility: hidden !important;
+    }
+
+    .navbar {
+        height: 4.5rem;
+        padding-left: 0.5rem;
+        padding-right: 1rem;
+        margin: 1rem 2rem;
+    }
+
+    .navbar-brand img {
+        width: 120%;
+    }
+
+    .navbar-brand {
+        margin: 0;
+        width: 60% !important;
+    }
+
+    .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 1.5rem;
+        margin-bottom: 55px;
+    }
+
+    #login {
+        visibility: hidden;
+    }
+
+    .offcanvas-body {
+        flex-direction: row;
+        margin-top: -5px;
+    }
+
+    #offcanvasNavbar {
+        width: 190px !important;
+    }
+
+    #judulCanvas {
+        font-size: 0.73rem;
+        transition: ease-in-out .3s;
+    }
+
+
+    #judulCanvas:hover {
+        font-size: 0.78rem;
+        color: #FBFFFF;
+    }
+
+    .nav-link:hover {
+        transform: scale(1.03);
+    }
+
+    .btn-close {
+        transition: ease-in-out 0.2s;
+        font-size: 0.62rem !important;
+        margin-top: -25px !important;
+    }
+
+    .btn-close:hover {
+        transform: scale(1.1);
+    }
+
+    .offcanvas-body .dropdown-menu {
+        margin-left: 3px;
+    }
+
+    .nav-link:hover::before {
+        visibility: hidden;
+    }
+
+    .nav-link {
+        transition: all .2s;
+        color: #ffffff !important;
+        font-size: 0.8rem;
+    }
+
+    .nav-link:hover {
+        transform: scale(1.03);
+    }
+
+    .navbar-nav .dropdown-menu a {
+        font-size: 0.76rem !important;
+    }
+
+    #login {
+        display: none;
+    }
+
+    #ad-mini {
+        display: block;
+        width: 145px;
+        margin-top: 10px;
+        margin-left: 6px !important;
+        font-size: 0.85rem;
+        font-weight: 700;
+        padding: 0.5rem 2rem;
+        transition: all .3s;
+        color: #61b5e6;
+        border-radius: 5rem;
+    }
+
+    #ad-mini:hover {
+        background-color: #ffffff;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+        transform: scale(1.05);
+    }
+
+    .arrow-prev {
+        margin-right: 10px !important;
+        width: 12px;
+        height: 12px;
+    }
+
+    .arrow-next {
+        margin-left: 10px !important;
+        width: 12px;
+        height: 12px;
+    }
+
+    .heading-secondary {
+        font-size: 1.6rem !important;
+        margin-bottom: 4rem !important;
+    }
+
+    .heading-secondary::after {
+        width: 5.5rem !important;
+        height: .55rem !important;
+    }
+
+    .content-tengah {
+        margin-top: 45px !important;
+    }
+
+    .card-image {
+        height: 100px;
+    }
+
+    .card-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 95% !important;
+        margin-bottom: 35px !important;
+    }
+
+    .button {
+        font-size: 12px !important;
+        width: 80% !important;
+    }
+
+    .button a {
+        font-size: 12px !important;
+    }
+
+    .deskripsi {
+        font-size: 11.5px !important;
+        line-height: 1.7 !important;
+        margin-top: 10px !important;
+    }
+
+    .footer {
+        padding-left: 29px !important;
+        padding-right: 29px !important;
+    }
+
+    .footer-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .footer-col-satu {
+        margin-left: 0px !important;
+        margin-bottom: 20px !important;
+        align-items: center !important;
+    }
+
+    .footer-col-dua {
+        margin-left: 0px !important;
+        margin-bottom: 40px !important;
+        align-items: center !important;
+    }
+
+    .footer-col-tiga {
+        margin-left: 0px !important;
+        align-items: center !important;
+        margin-bottom: 0px !important;
+    }
+
+    .footer-col-satu, .footer-col-dua, .footer-col-tiga {
+        width: 100% !important;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .logo {
+        width: 110% !important;
+        margin-bottom: 50px !important;
+    }
+
+    .email:hover {
+        font-size: 12.5px !important;
+    }
+
+    .footer-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-heading {
+        font-size: 18px !important;
+    }
+
+    .footer-text, .nomor-hp {
+        font-size: 11.5px !important;
+    }
+
+    .medsos-list svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .medsos {
+        margin-top: 20px !important;
+    }
+
+    .medsos .bi:hover {
+        transform: scale(1.1);
+    }
+
+    .logo-hubungi {
+        width: 15% !important;
+    }
+
+    .profil-wrapper .sidebar {
+        display: none !important;
+    }
+
+    .judul-tentang-kami h2 {
+        font-size: 20px !important;
+    }
+
+    .judul-tentang-kami::after {
+        width: 4rem !important;
+    }
+
+    .isi-paragraf {
+        font-size: 13px !important;
+    }
+
+    .isi-tentang-kami {
+        margin-top: 3rem !important;
+    }
+
+    .main-tentang-kami-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .isi-paragraf {
+        text-align: center !important;
+    }
+
+    .judul-tentang-kami::after {
+        margin-left: 34px !important;
+        height: 8px !important;
+    }
+
+    .main-visimisi-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .judul-visimisi::after {
+        margin-left: 32px !important;
+    }
+
+    .judul-visimisi h2 {
+        font-size: 22px !important;
+    }
+
+    .judul-visimisi::after {
+        width: 4rem !important;
+    }
+
+    .heading-icon__image {
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+
+    .heading-icon__text {
+        font-size: 18px !important;
+    }
+
+    .paragraf-isimisi {
+        font-size: 13.5px !important;
+    }
+
+    .list li {
+        font-size: 13.5px !important;
+    }
+}
+
+/* SCREEN DARI 0PX KE 345PX*/
+@media (min-width: 0px) and (max-width: 345.98px) {
+    .medsos-list svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .medsos-list {
+        margin-right: 15px !important;
+    }
+}
+
+/* SCREEN DARI 0PX KE 337PX*/
+@media (min-width: 0px) and (max-width: 337.98px) {
+    .card-image {
+        height: 50px;
+    }
+
+    .card {
+        width: 95% !important;
+        margin-bottom: 35px !important;
+    }
+
+    .button {
+        font-size: 11px !important;
+        width: 95% !important;
+    }
+
+    .button a {
+        font-size: 11px !important;
+    }
+
+    .deskripsi {
+        font-size: 10.5px !important;
+    }
+}
+
+#carouselExampleFade {
+    margin-top: -16px;
+    margin-left: 26px;
+    margin-right: 32px;
+    height: auto;
+}
+
+.carousel-inner {
+    border-radius: 0px 0px 16px 16px;
+}
+
+.carousel-item {
+    transition: ease-in-out 0.4s;
+}
+
+.carousel-item img {
+    width: 100%;
+    object-fit: cover !important;
+    height: 100% !important;
+}
+
+.arrow-prev {
+    margin-right: 90px;
+}
+
+.arrow-next {
+    margin-left: 90px;
+}
+
+.carousel-control-next, .carousel-control-prev, .carousel-control-next:focus, .carousel-control-prev:focus, .carousel-control-next:hover, .carousel-control-prev:hover {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: 1;
+}
+
+.arrow-prev,
+.arrow-next {
+    transition: opacity 0.15s ease-in-out;
+    opacity: 0;
+}
+
+.content-tengah {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100% !important;
+    padding-left: 26px;
+    padding-right: 32px;
+}
+
+.heading-secondary {
+    font-family: 'Open Sans', sans-serif;
+    color: #2e3b44;
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.heading-secondary::after {
+    background-color: #3ec9eb;
+    border-radius: 5rem;
+    content: "";
+    display: block;
+    height: .8rem;
+    left: 0;
+    margin: 1.5rem 0 0;
+    position: absolute;
+    width: 16.5rem;
+}
+
+.slide-container {
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .15);
+    width: 100%;
+    padding: 20px 0px !important;
+}
+
+.deskripsi {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600 !important;
+    color: #2E3B44;
+    margin-top: 4px !important;
+    margin-bottom: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Open Sans, sans-serif;
+    line-height: 27.2px;
+    text-decoration: rgb(46, 59, 68);
+}
+
+.button {
+    border: none;
+    color: #ffffff;
+    background-color: #61b5e6;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px 20px 14px 20px;
+    margin-top: auto;
+}
+
+.button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+}
+
+.button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer {
+    font-family: Open Sans, sans-serif;
+    margin-bottom: 1rem;
+    width: 100% !important;
+    padding-left: 26px;
+    padding-right: 32px;
+}
+
+.footer-wrapper {
+    background-color: #61B5E6;
+    padding: 50px 60px;
+}
+
+.logo {
+    width: 25%;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.footer-col-satu, .footer-col-dua {
+    width: 25%;
+}
+
+.footer-col-satu, .footer-col-dua, .footer-col-tiga {
+    margin-left: 50px;
+}
+
+.email {
+    transition: ease-in-out .1s;
+}
+
+.email:hover {
+    font-size: 17px;
+}
+
+
+.footer-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.footer-heading::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    display: block;
+    width: 5rem;
+    height: .4rem;
+    margin: .5rem 0 0;
+}
+
+
+.footer-text {
+    font-family: Open Sans, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer-text a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-text img {
+    margin-right: 8px;
+}
+
+.medsos {
+    margin-top: 22px;
+}
+
+.medsos-list:last-child {
+    margin-right: 0 !important;
+}
+
+.medsos-list {
+    display: inline-block;
+    color: #FFFFFF;
+    position: relative;
+    margin-right: 25px;
+}
+
+.medsos .bi {
+    transition: .1s all ease-in;
+}
+
+.medsos .bi:hover {
+    transform: scale(1.3);
+}
+
+@media (max-width: 1227.98px) {
+    .nomor-hp {
+        font-size: 15px;
+    }
+}
+
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1) !important;
+    width: 30%;
+}
+
+.login-form h1 {
+    border-bottom: 2px solid silver;
+    width: 100%;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.login-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form .txt-field {
+    margin: 20px 0;
+    width: 50%;
+}
+
+.txt-field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    border-bottom: 2px solid #adadad;
+}
+
+.txt-field input:focus {
+    border-bottom: 2px solid #61b5e6;
+}
+
+.submit {
+    margin-top: 5px;
+    font-size: 1rem;
+    width: 50%;
+    border: 1px solid;
+    outline: none;
+    font-weight: 700;
+    padding: 0.5rem 2rem;
+    background-color: #61b5e6;
+    color: #ffffff;
+    transition: all .3s;
+    border-radius: 5rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.submit:hover {
+    transform: scale(1.05);
+}
+
+.profil {
+    margin-top: -1rem;
+    padding-left: 26px;
+    padding-right: 32px;
+}
+
+.profil-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-tentang-kami-wrapper {
+    flex: 5;
+    min-height: 100vh;
+    padding: 40px !important;
+}
+
+.judul-tentang-kami h2 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 35px;
+    font-weight: 700;
+    color: #2E3B44;
+}
+
+.judul-tentang-kami::after {
+    background-color: #3ec9eb;
+    border-radius: 5rem;
+    content: "";
+    display: block;
+    height: .6rem;
+    margin-top: 10px;
+    position: absolute;
+    width: 5rem;
+}
+
+.isi-tentang-kami {
+    margin-top: 4rem;
+}
+
+.isi-paragraf {
+    font-family: Open Sans, sans-serif;
+    color: #2e3b44;
+    font-size: 16px;
+    line-height: 1.9 !important;
+}
+
+.isi-paragraf:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.sidebar {
+    background-color: #f5f5f5;
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0
+}
+
+.sidebar-item {
+    padding: .25rem 0;
+}
+
+.sidebar-item a {
+    text-decoration: none;
+}
+
+.sidebar-link:active, .sidebar-link:hover {
+    background-color: #e0e0e0;
+    color: #2e3b44;
+}
+
+.sidebar-item.active .sidebar-link {
+    background-color: #caf0fa;
+    color: #18b7df;
+}
+
+.sidebar-link {
+    font-size: 15px !important;
+    padding: 20px 10px !important;
+}
+
+.sidebar-link:link, .sidebar-link:visited {
+    border-radius: 8px;
+    color: #707070;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 100%;
+    padding: 2rem 1rem;
+    transition: all .2s ease-in;
+    width: 100%;
+}
+
+/* VISIMISI */
+.main-visimisi-wrapper {
+    flex: 5;
+    min-height: 90vh;
+    padding: 40px !important;
+}
+
+.judul-visimisi h2 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 35px;
+    font-weight: 700;
+    color: #2E3B44;
+}
+
+.judul-visimisi::after {
+    background-color: #3ec9eb;
+    border-radius: 5rem;
+    content: "";
+    display: block;
+    height: .6rem;
+    margin-top: 10px;
+    position: absolute;
+    width: 5rem;
+}
+
+.isi-visimisi {
+    margin-top: 4rem;
+}
+
+.isi-paragraf {
+    font-family: Open Sans, sans-serif;
+    color: #2e3b44;
+    line-height: 1.7;
+    font-size: 16px;
+    line-height: 27.2px
+}
+
+.isi-paragraf:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.sidebar {
+    background-color: #f5f5f5;
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 0
+}
+
+.sidebar-item {
+    padding: .25rem 0;
+}
+
+.sidebar-item a {
+    text-decoration: none;
+}
+
+.sidebar-link:active, .sidebar-link:hover {
+    background-color: #e0e0e0;
+    color: #2e3b44;
+}
+
+.sidebar-item.active .sidebar-link {
+    background-color: #caf0fa;
+    color: #18b7df;
+}
+
+.sidebar-link {
+    font-size: 15px !important;
+    padding: 20px 10px !important;
+}
+
+.sidebar-link:link, .sidebar-link:visited {
+    border-radius: 8px;
+    color: #707070;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 100%;
+    padding: 2rem 1rem;
+    transition: all .2s ease-in;
+    width: 100%;
+}
+
+.visi-judul, .misi-judul {
+    margin-bottom: 15px;
+}
+
+.heading-icon__image {
+    height: 3.5rem;
+    margin-right: 10px;
+    width: 3.5rem;
+}
+
+.heading-icon__image, .heading-icon__text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.heading-icon__text {
+    color: #61b5e6;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.paragraf-isimisi {
+    color: #2e3b44;
+    font-size: 16.2px;
+    line-height: 1.7;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    line-height: 1.7;
+}
+
+.list li {
+    color: #2e3b44;
+    font-size: 16.2px;
+    margin-bottom: 12px;
+    padding: 0 !important;
+}
+
+.list li::before {
+    background-color: #61b5e6;
+    border-radius: 50%;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin: 0 16px 0 0;
+}
+
+.main-dosen-wrapper {
+    flex: 5;
+    min-height: 90vh !important;
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px !important;
+}
+
+.judul-dosen h2 {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 35px;
+    font-weight: 700 !important;
+    color: #2E3B44;
+}
+
+.judul-dosen::after {
+    background-color: #3ec9eb;
+    border-radius: 5rem;
+    content: "";
+    display: block;
+    height: .6rem;
+    margin-top: 10px;
+    margin-left: 20px;
+    position: absolute;
+    width: 4rem;
+}
